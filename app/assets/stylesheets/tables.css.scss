@@ -1,0 +1,21 @@
+.table {
+  th.actions {
+    min-width: 120px;
+  }
+
+  .two-lines {
+    p {
+      margin-bottom: 2px;
+    }
+
+    .line2 {
+      a {
+        color: #aaa;
+
+        &:hover {
+          color: #0088cc;
+        }
+      }
+    }
+  }
+}

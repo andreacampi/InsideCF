@@ -1,0 +1,10 @@
+= form_for @dea do |f|
+  -if @dea.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@dea.errors.count, "error")} prohibited this dea from being saved:"
+      %ul
+        - @dea.errors.full_messages.each do |msg|
+          %li= msg
+
+  .actions
+    = f.submit 'Save'
